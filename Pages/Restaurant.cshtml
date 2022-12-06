@@ -1,0 +1,12 @@
+@page
+@model RestaurantModel
+@{
+    ViewData["Title"] = "Restaurants";
+}
+<h3>DB Page</h3>
+<hr />
+<p>List of Restaurants:</p>
+@foreach (var r in Model.Restaurants)
+{
+    <p>@Html.DisplayFor(modelItem => r.RestaurantName, r.Location)</p>
+}

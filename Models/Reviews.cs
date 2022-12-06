@@ -4,11 +4,15 @@ namespace RestaurantASP.Models
     {
         public int ReviewID {get; set;}
 
-        public decimal Price {get; set;}
+        public double Price {get; set;}
 
         public bool Tossed {get; set;}
 
-        public decimal Rating {get; set;}
+        public double Rating {get; set;}
+
+        public int RestaurantID {get; set;}
+        public Restaurant Restaurant {get; set;} = null!;
+
     }
     
 }
